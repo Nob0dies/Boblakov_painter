@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#37a198+0,2d8785+22,287877+33,267070+50,246a69+67,163d3e+82,0a0504+100 */
+    background: #37a198; /* Old browsers */
+    background: -moz-linear-gradient(45deg,  hsl(175,49%,42%) 0%, hsl(179,50%,35%) 22%, hsl(179,50%,31%) 33%, hsl(180,49%,29%) 50%, hsl(179,49%,28%) 67%, hsl(182,47%,16%) 82%, hsl(10,43%,3%) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg,  hsl(175,49%,42%) 0%,hsl(179,50%,35%) 22%,hsl(179,50%,31%) 33%,hsl(180,49%,29%) 50%,hsl(179,49%,28%) 67%,hsl(182,47%,16%) 82%,hsl(10,43%,3%) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg,  hsl(175,49%,42%) 0%,hsl(179,50%,35%) 22%,hsl(179,50%,31%) 33%,hsl(180,49%,29%) 50%,hsl(179,49%,28%) 67%,hsl(182,47%,16%) 82%,hsl(10,43%,3%) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#37a198', endColorstr='#0a0504',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    color: #fff;
+    height: 86px;
+    line-height: 86px;
+}
+nav ul {
+    margin: 0;
+}
+nav ul.right {
+    float: right;
+}
+nav ul li {
+    list-style: none;
+    float: left;
+    padding: 0 35px;
+    text-align: center;
+    -webkit-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+}
+nav ul li:hover, nav ul li:active {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+nav ul li.active {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section {
+    position: absolute;
+    padding: 25px;
+    top: 0;
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+section.active {
+    opacity: 1;
+}
+
+.skills p {
+    text-indent: 20px;
+}
+.skills h5 {
+    margin-top: 20px;
+}
+
+.contact p {
+    margin-bottom: 10px;
+    text-indent: 20px;
+}
