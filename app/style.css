@@ -1,31 +1,44 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
+body{
+    background: #414047 url(img/imgb.jpg) no-repeat;
+}
 nav {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#37a198+0,2d8785+22,287877+33,267070+50,246a69+67,163d3e+82,0a0504+100 */
-    background: #37a198; /* Old browsers */
-    background: -moz-linear-gradient(45deg,  hsl(175,49%,42%) 0%, hsl(179,50%,35%) 22%, hsl(179,50%,31%) 33%, hsl(180,49%,29%) 50%, hsl(179,49%,28%) 67%, hsl(182,47%,16%) 82%, hsl(10,43%,3%) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(45deg,  hsl(175,49%,42%) 0%,hsl(179,50%,35%) 22%,hsl(179,50%,31%) 33%,hsl(180,49%,29%) 50%,hsl(179,49%,28%) 67%,hsl(182,47%,16%) 82%,hsl(10,43%,3%) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(45deg,  hsl(175,49%,42%) 0%,hsl(179,50%,35%) 22%,hsl(179,50%,31%) 33%,hsl(180,49%,29%) 50%,hsl(179,49%,28%) 67%,hsl(182,47%,16%) 82%,hsl(10,43%,3%) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#37a198', endColorstr='#0a0504',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
+    /*background: #37a198; !* Old browsers *!*/
+    /*background: -moz-linear-gradient(45deg,  hsl(175,49%,42%) 0%, hsl(179,50%,35%) 22%, hsl(179,50%,31%) 33%, hsl(180,49%,29%) 50%, hsl(179,49%,28%) 67%, hsl(182,47%,16%) 82%, hsl(10,43%,3%) 100%); !* FF3.6-15 *!*/
+    /*background: -webkit-linear-gradient(45deg,  hsl(175,49%,42%) 0%,hsl(179,50%,35%) 22%,hsl(179,50%,31%) 33%,hsl(180,49%,29%) 50%,hsl(179,49%,28%) 67%,hsl(182,47%,16%) 82%,hsl(10,43%,3%) 100%); !* Chrome10-25,Safari5.1-6 *!*/
+    /*background: linear-gradient(45deg,  hsl(175,49%,42%) 0%,hsl(179,50%,35%) 22%,hsl(179,50%,31%) 33%,hsl(180,49%,29%) 50%,hsl(179,49%,28%) 67%,hsl(182,47%,16%) 82%,hsl(10,43%,3%) 100%); !* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ *!*/
+    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#37a198', endColorstr='#0a0504',GradientType=1 ); !* IE6-9 fallback on horizontal gradient *!*/
+    /*-webkit-box-shadow: 0px 6px 13px -5px rgba(51,51,51,1);*/
+    /*-moz-box-shadow: 0px 6px 13px -5px rgba(51,51,51,1);*/
+    /*box-shadow: 0px 6px 13px -5px rgba(51,51,51,1);*/
     color: #fff;
     height: 86px;
     line-height: 86px;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
 }
+
 nav ul {
-    margin: 0;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
 }
-nav ul.right {
-    float: right;
-}
+
 nav ul li {
     list-style: none;
     float: left;
-    padding: 0 35px;
+    padding: 0 15px;
     text-align: center;
     -webkit-transition: background-color 0.3s;
     transition: background-color 0.3s;
@@ -33,17 +46,34 @@ nav ul li {
 nav ul li:hover, nav ul li:active {
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.1);
+    border-top:3px solid #FFEB3B;
 }
 nav ul li.active {
     background-color: rgba(0, 0, 0, 0.1);
+    border-top:3px solid #FFEB3B;
 }
 
 .container {
+
     position: relative;
     max-width: 800px;
     margin: 0 auto;
-}
 
+}
+.text-color{
+    color:#333333;
+}
+.content{
+    font-family:'Montserrat', sans-serif;
+    font-size: 100%;
+    color:#fff;
+    background-color: rgba(255, 255, 255, 0.18);
+    padding: 20px;
+    -webkit-box-shadow: 0px 1px 12px 1px rgba(51,51,51,0.5);
+    -moz-box-shadow: 0px 1px 12px 1px rgba(51,51,51,0.5);
+    box-shadow: 0px 1px 12px 1px rgba(51,51,51,0.5);
+
+}
 section {
     position: absolute;
     padding: 25px;
@@ -66,4 +96,44 @@ section.active {
 .contact p {
     margin-bottom: 10px;
     text-indent: 20px;
+}
+.active.pusher{
+    left:0;
+
+}
+
+
+
+.pusher {
+    top: 50px;
+    left: -100%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    transition: left .9s cubic-bezier(0.5, 0.24, 0, 0.99);
+
+}
+
+
+
+h1{
+     font: bold 150%  Montserrat;
+    color:#FFEB3B;
+
+}
+
+
+
+h1 span{
+     font:65% Montserrat;
+    color:#fff;
+}
+
+.sentMail{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background: #FFEB3B;
+    border: none;
 }
